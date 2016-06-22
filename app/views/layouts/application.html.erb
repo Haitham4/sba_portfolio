@@ -10,21 +10,18 @@
 
     $(document).ready(function() {
       $('.nav').click( function() {
-        $('.nav-tabs li:first').addClass('active');
-        //alert("Hello friends");
+        $(this).addClass('active');
+        alert("Hello friends");
         //$(this).addClass('active').siblings().removeClass('active');
       });
     })
-
-
   </script>
+
 </head>
 <body>
 
 <%= render 'layouts/header' %>
 <%= render 'layouts/flash' %>
 <%= yield %>
-<%= render 'layouts/footer' %>
-
 </body>
 </html>

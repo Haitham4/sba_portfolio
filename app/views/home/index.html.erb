@@ -1,5 +1,9 @@
+<h1 align="center"> <span class = "label label-default">Home</span> </h1>
+
+<hr>
 <h2>Hello everyone, I am Haitham !! </h2>
-<p class = "lead">
+
+<p class = "lead" style="margin-left: 15px">
   the use of lead body copy. This is an example paragraph
   demonstrating the use of lead body copy.This is an example
   paragraph demonstrating the use of lead body copy.This is an
@@ -7,7 +11,8 @@
   This is an example paragraph demonstrating the use of lead body copy.</p>
 
 <hr>
+
 <h3 align="center" > <span class = "label label-default"> My projects </span> </h3>
-<div class="col-lg-6 col-lg-6">
+<div class="container">
 <%= render partial: 'projects/summary', collection: @projects, as: :project%>
 </div>
