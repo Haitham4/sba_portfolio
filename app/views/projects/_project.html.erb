@@ -4,6 +4,8 @@
   <div><%= project.project_link %></div>
   <div><%= project.website_link %></div>
   <div><%= link_to 'Show', project %></div>
+      <% if admin_signed_in?%>
   <div><%= link_to 'Edit', edit_project_path(project) %></div>
   <div><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      <%end%>
 </div>
