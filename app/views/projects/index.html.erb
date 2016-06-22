@@ -4,5 +4,6 @@
 
 <%= render @projects %>
 
-<%= link_to('New Project', new_project_path) if current_admin %>
-
+<ul class="nav nav-tabs navbar-fixed-bottom">
+  <li> <%= link_to('New Project', new_project_path) if current_admin %> </li>
+</ul>
